@@ -113,8 +113,20 @@ def run_agent():
                     print(f"LLM will call: {last_msg.tool_calls}")
                     
             elif isinstance(last_msg, AIMessage) and last_msg.content:
-                print(f"\nAssistant: {last_msg.content[0]['text']}")
-                  
+                # Handle different content formats
+                if isinstance(last_msg.content, str):
+                    content = last_msg.content
+                elif isinstance(last_msg.content, list) and len(last_msg.content) > 0:
+                    # Content is a list of content blocks
+                    if isinstance(last_msg.content[0], dict) and 'text' in last_msg.content[0]:
+                        content = last_msg.content[0]['text']
+                    else:
+                        content = str(last_msg.content[0])
+                else:
+                    content = str(last_msg.content)
+                
+                print(f"\nAssistant: {content}")
+              
             elif isinstance(last_msg, ToolMessage):
                 try:
                     print(f"Tool result: {last_msg.content}")

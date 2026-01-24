@@ -1,0 +1,34 @@
+
+(torchenv) C:\Users\kumbh\OneDrive\Desktop\Codes\Practise\Python_R\file_agent>python cli.py
+Created model successfully with API KEY and Temperature 0.3
+Graph is now compiled...
+Enter user input: Current directory is my project of langraph agent with file operations  ..see all my files and create a readme.md file about how to run this project from creating venv to instllinig python modules and all
+System prompt added
+
+The next tool that will be called is:
+Tool name: list_directory_tool
+Tool arguments: {}
+
+Approve execution of list_directory_tool? (yes/no): yes
+
+The next tool that will be called is:
+Tool name: list_directory_tool
+Tool arguments: {}
+Tool result: {"success": true, "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent", "total_items": 11, "folder_count": 5, "file_count": 6, "folders": [{"name": ".git", "type": "folder", "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\.git"}, {"name": ".vscode", "type": "folder", "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\.vscode"}, {"name": "Extras", "type": "folder", "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\Extras"}, {"name": "Operations", "type": "folder", "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\Operations"}, {"name": "__pycache__", "type": "folder", "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\__pycache__"}], "files": [{"name": ".env", "type": "file", "size": 687, "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\.env"}, {"name": ".gitignore", "type": "file", "size": 368, "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\.gitignore"}, {"name": "cli.py", "type": "file", "size": 6280, "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\cli.py"}, {"name": "readme.md", "type": "file", "size": 906, "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\readme.md"}, {"name": "requirements.txt", "type": "file", "size": 84, "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\requirements.txt"}, {"name": "system_prompt.py", "type": "file", "size": 2208, "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\system_prompt.py"}]}
+
+The next tool that will be called is:
+Tool name: write_file_tool
+Tool arguments: {'content': "# Langraph Agent Project\n\nThis project implements a Langraph agent with file operation capabilities.\n\n## Setup Instructions\n\nFollow these steps to set up and run the project:\n\n### 1. Create a Virtual Environment\n\nIt's recommended to use a virtual environment to manage project dependencies.\n\n```bash\npython -m venv venv\n```\n\n### 2. Activate the Virtual Environment\n\n- **On Windows:**\n\n  ```bash\n  .\\venv\\Scripts\\activate\n  ```\n\n- **On macOS and Linux:**\n\n  ```bash\n  source venv/bin/activate\n  ```\n\n### 3. Install Python Modules\n\nOnce the virtual environment is activated, install the required Python packages using `pip`:\n\n```bash\npip install -r requirements.txt\n```\n\n### 4. Run the Project\n\nAfter installing the dependencies, you can run the main application using the `cli.py` file:\n\n```bash\npython cli.py\n```\n\nThis will start the Langraph agent.\n\n### 5. Deactivate the Virtual Environment\n\nWhen you are done working on the project, you can deactivate the virtual environment:\n\n```bash\ndeactivate\n```\n", 'overwrite': True, 'file_path': 'readme.md'}
+
+Approve execution of write_file_tool? (yes/no): yes
+
+The next tool that will be called is:
+Tool name: write_file_tool
+Tool arguments: {'content': "# Langraph Agent Project\n\nThis project implements a Langraph agent with file operation capabilities.\n\n## Setup Instructions\n\nFollow these steps to set up and run the project:\n\n### 1. Create a Virtual Environment\n\nIt's recommended to use a virtual environment to manage project dependencies.\n\n```bash\npython -m venv venv\n```\n\n### 2. Activate the Virtual Environment\n\n- **On Windows:**\n\n  ```bash\n  .\\venv\\Scripts\\activate\n  ```\n\n- **On macOS and Linux:**\n\n  ```bash\n  source venv/bin/activate\n  ```\n\n### 3. Install Python Modules\n\nOnce the virtual environment is activated, install the required Python packages using `pip`:\n\n```bash\npip install -r requirements.txt\n```\n\n### 4. Run the Project\n\nAfter installing the dependencies, you can run the main application using the `cli.py` file:\n\n```bash\npython cli.py\n```\n\nThis will start the Langraph agent.\n\n### 5. Deactivate the Virtual Environment\n\nWhen you are done working on the project, you can deactivate the virtual environment:\n\n```bash\ndeactivate\n```\n", 'overwrite': True, 'file_path': 'readme.md'}
+Tool result: {"success": true, "message": "File written successfully", "path": "C:\\Users\\kumbh\\OneDrive\\Desktop\\Codes\\Practise\\Python_R\\file_agent\\readme.md", "size": 1004}
+
+Assistant: I have listed all the files and folders in your current directory. I have also created a `readme.md` file with instructions on how to set up and run your project, including creating a virtual environment and installing Python modules.
+
+Enter next task (or 'quit' to exit): quit
+
+(torchenv) C:\Users\kumbh\OneDrive\Desktop\Codes\Practise\Python_R\file_agent> Current directory is my project of langraph agent with file operations  ..see all my files and create a readme.md file about how to run this project from creating venv to instllinig python modules and all Current directory is my project of langraph agent with file operations  ..see all my files and create a readme.md file about how to run this project from creating venv to instllinig python modules and all Current directory is my project of langraph agent with file operations  ..see all my files and create a readme.md file about how to run thisproject from creating venv to instllinig python modules and all
