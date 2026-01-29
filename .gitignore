@@ -36,3 +36,5 @@ venv.bak/
 *.log
 *.backup
 *.swp
+
+credentials.json
