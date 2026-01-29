@@ -38,3 +38,4 @@ venv.bak/
 *.swp
 
 credentials.json
+"credentials.json" 
