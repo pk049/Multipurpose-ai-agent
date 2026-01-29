@@ -13,7 +13,7 @@ from datetime import datetime
 import json
 # import streamlit as st
 from pymongo import MongoClient
-from Operations.file_operations import LANGCHAIN_TOOLS as FILE_TOOLS
+from Operations import ALL_TOOLS
 from system_prompt import SYSTEM_PROMPT
 
 load_dotenv()
@@ -32,7 +32,7 @@ try:
         api_key=api_key,
         temperature=0.3
     )
-    llm_with_tools = llm.bind_tools(FILE_TOOLS)
+    llm_with_tools = llm.bind_tools(ALL_TOOLS)
     print(f"Created model successfully with API KEY and Temperature {0.3}")
 except Exception as e:
     print(f"Error occurred while creating Gemini Model: {e}")
@@ -72,7 +72,7 @@ def should_continue(state: AgentState):
 try:
     workflow = StateGraph(AgentState)
     workflow.add_node("llm_node", llm_node)
-    workflow.add_node("tool_node", ToolNode(FILE_TOOLS))
+    workflow.add_node("tool_node", ToolNode(ALL_TOOLS))
     
     workflow.add_edge(START, "llm_node")
     workflow.add_conditional_edges(
