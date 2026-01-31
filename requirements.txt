@@ -4,3 +4,5 @@ langchain-core
 langchain-google-genai
 pymongo
 python-dotenv
+google-auth-oauthlib
+google-api-python-client

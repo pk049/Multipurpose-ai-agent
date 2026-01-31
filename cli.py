@@ -209,7 +209,8 @@ def run_agent():
                     
                 elif isinstance(last_msg, ToolMessage):
                     try:
-                        print(f"Tool result: {last_msg.content}")
+                        # print(f"Tool result: {last_msg.content}")
+                        pass
                     except Exception as e:
                         print(f"The tool message is: {last_msg}")
             
