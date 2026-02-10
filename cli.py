@@ -176,6 +176,10 @@ def run_agent():
     session_start = datetime.now().isoformat()
     config = {"configurable": {"thread_id": thread_id}}
     
+    # list files from desktop and send that fieles as list as email to pratik@gmail.com
+                        #   --->llm----->AImsg(tool_calls='list_files')----->Toolnode---->
+                                                                    #    ---->END
+                        #    
     # Initial input
     current_input = {"messages": [HumanMessage(content=user_input)]}
     
